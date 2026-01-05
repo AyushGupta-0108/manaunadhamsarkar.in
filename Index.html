@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Manauna Dham – Official Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Do not index this page -->
+<meta name="robots" content="noindex, follow">
+
+<!-- Auto redirect after 7 seconds -->
+<meta http-equiv="refresh" content="7; url=https://www.manaunadham.org.in">
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#7a0000,#d4a017);
+  font-family:Segoe UI,Arial;
+  color:white;
+}
+.card{
+  background:rgba(0,0,0,0.5);
+  padding:40px;
+  border-radius:15px;
+  text-align:center;
+  max-width:600px;
+  box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+h1{margin-top:0;font-size:36px}
+a{
+  color:white;
+  text-decoration:none;
+  background:#7a0000;
+  padding:12px 25px;
+  border-radius:8px;
+  display:inline-block;
+  margin-top:15px;
+  font-size:18px;
+}
+a:hover{background:#a00000}
+p{font-size:18px}
+</style>
+
+<script>
+var target = "https://www.manaunadham.org.in";
+var seconds = 7;
+
+setTimeout(function(){
+  window.location.href = target;
+}, 7000);
+
+window.onload = function(){
+  var el = document.getElementById("count");
+  setInterval(function(){
+    seconds--;
+    if(seconds >= 0) el.innerText = seconds;
+  },1000);
+}
+</script>
+
+</head>
+<body>
+
+<div class="card">
+  <h1>🙏 Jai Shree Shyam 🙏</h1>
+
+  <p>The official website of <b>Manauna Dham</b> is:</p>
+
+  <p>
+    <a href="https://www.manaunadham.org.in">
+      www.manaunadham.org.in
+    </a>
+  </p>
+
+  <p>You will be redirected in <b><span id="count">7</span></b> seconds…</p>
+
+  <p>If it does not happen automatically, click the button above.</p>
+</div>
+
+</body>
+</html>
